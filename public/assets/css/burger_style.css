@@ -1,0 +1,113 @@
+.img {
+  width: 250px;
+  height: 250px;
+}
+
+#title {
+  display: block;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+#form {
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 10px;
+}
+
+.body {
+  background-color: none !important;
+  background-image: url("../img/tablecloth.jpg") !important;
+  background-repeat: repeat;
+ 
+}
+
+#hero, #burgers {
+  margin-left: 100px;
+  margin-right: 100px;
+  padding: 40px;
+  text-align: center;
+}
+
+#hero, #form {
+  background-color: rgb(204, 3, 3);
+  text-align: center;
+}
+
+.hr {
+  color: black;
+  height: 5px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+#burgers {
+  background-image: url("../img/tablecloth.jpg");
+}
+
+#burger-items {
+  font-size: 20px;
+}
+
+#name {
+  display: block; 
+  margin: auto;
+  width: auto;
+}
+
+.submit {
+  margin: 20px;
+}
+.container {
+  margin: auto;
+
+}
+
+ul {
+  list-style-type: none;
+}
+
+li {
+  width: 90%;
+  height: 100px;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  background: black;
+  color: white;
+  vertical-align: middle; 
+}
+
+.eat-btn {
+  text-align: center; 
+  padding: 20px;
+}
+
+/* .btn-small {
+  background: white;
+
+} */
+
+#available, #devoured {
+  margin: auto;
+  text-align: center;
+  vertical-align: top;
+}
+
+#devoured {
+  margin-top: 0;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.create-update-form {
+  padding: 5px;
+  margin: 5px;
+  background: gray;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
