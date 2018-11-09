@@ -34,7 +34,7 @@ $(function() {
         console.log($("#burg").val());
         var newItem = {
         burger_name: $("#burg").val().trim(),
-        devoured: false,
+        devoured: 0,
         };
         console.log(newItem);
 

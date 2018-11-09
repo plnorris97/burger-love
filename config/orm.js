@@ -29,8 +29,7 @@ function objToSql(ob) {
       if (typeof value === "string" && value.indexOf(" ") >= 0) {
         value = "'" + value + "'";
       }
-      // e.g. {name: 'Lana Del Grey'} => ["name='Lana Del Grey'"]
-      // e.g. {sleepy: true} => ["sleepy=true"]
+      
       arr.push(key + "=" + value);
     }
   }
@@ -51,24 +50,13 @@ var orm = {
     });
   },
   create: function(table, cols, vals, cb) {
-    var queryString = "INSERT INTO " + table + " (" + cols + ") VALUES (" + vals + ");";
+    var queryString = "INSERT INTO " + table + " (" + cols + ") VALUES (" + vals[0] + ");";
+    console.log(vals);
     console.log(queryString);
-
-    connection.query(queryString, vals, function(err, result) {
-      if (err) {
-        throw err;
-      }
-
-      cb(result);
-    });
   },
+  
   update: function(table, objColVals, condition, cb) {
     var queryString = "UPDATE " + table;
-
-    // queryString += " SET ";
-    // queryString += objToSql(objColVals);
-    // queryString += " WHERE ";
-    // queryString += condition; 
 
     console.log(queryString);
     connection.query(queryString, function(err, result) {
@@ -78,8 +66,8 @@ var orm = {
         
         cb(result);
     });
+  }
 }
-};
 
-// Export the orm object for the model (cat.js).
+// Export the orm object for the model
 module.exports = orm;
