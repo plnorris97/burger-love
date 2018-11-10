@@ -49,12 +49,14 @@ var orm = {
       cb(result);
     });
   },
+
+
   create: function(table, cols, vals, cb) {
     var queryString = "INSERT INTO " + table + " (" + cols + ") VALUES (" + vals[0] + ");";
     console.log(vals);
     console.log(queryString);
   },
-  
+
   update: function(table, objColVals, condition, cb) {
     var queryString = "UPDATE " + table;
 

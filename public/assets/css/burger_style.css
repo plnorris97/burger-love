@@ -12,7 +12,7 @@
 #form {
   margin-left: 50px;
   margin-right: 50px;
-  padding: 60px;
+  padding: 40px;
 }
 
 .body {
@@ -98,7 +98,7 @@ li {
   /* margin-top: 0; */
   /* height: auto;  */
   padding: 10px;
-  margin-left: 100px;
+  margin-left: 80px;
   text-align: center;
   /* vertical-align: top !important; */
   background-color: white;
@@ -108,7 +108,7 @@ li {
   /* margin: auto; */
   /* margin-top: 0; */
   /* height: auto;  */
-  margin-left: 100px;
+  margin-left: 80px;
   padding: 10px;
   text-align: center;
   vertical-align: top !important;

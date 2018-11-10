@@ -42,7 +42,8 @@ $(function() {
         $.ajax("/api/burgers", {
         type: "POST",
         data: newItem
-        }).then(
+        })
+        .then(
         function() {
             console.log("created new burger");
             // Reload the page to get the updated list
