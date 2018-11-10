@@ -52,9 +52,24 @@ var orm = {
 
 
   create: function(table, cols, vals, cb) {
-    var queryString = "INSERT INTO " + table + " (" + cols + ") VALUES (" + vals[0] + ");";
+    var queryString = "INSERT INTO " + table; //+ " (" + cols + ") VALUES (" + vals[0] + ");";
     console.log(vals);
     console.log(queryString);
+
+    queryString += " (";
+    queryString += cols.toString();
+    queryString += ") ";
+    queryString += "VALUES (";
+    queryString += printQuestionMarks(vals.length);
+    queryString += ") ";
+
+    connection.query(queryString, vals, function(err, result) {
+      if (err) {
+        throw err;
+      }
+
+      cb(result);
+    });
   },
 
   update: function(table, objColVals, condition, cb) {
