@@ -4,7 +4,7 @@
 
 This project was made in Node, uses the MySQL database, Express server, Handlebars and a homemade ORM. It follows the Model View Controller (MVC) design pattern. The MVC design pattern specifies that an application consist of a data model, presentation information, and control information. 
 
-Access the app live: `https://floating-brook-40608.herokuapp.com`
+Access the app live: https://floating-brook-40608.herokuapp.com
 
 
 ## About Burger Love
