@@ -1,8 +1,7 @@
 // Make sure we wait to attach our handlers until the DOM is fully loaded.
 // burger-block handlebars
 $(function() {
-    $("#eat-burger").on("click", function(event) {
-        console.log("got here");
+    $(".eat-burger").on("click", function(event) {
       var id = $(this).data("id");
       var newBurger = $(this).data("newdevoured");
         console.log(newBurger);
